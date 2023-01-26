@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .test {
+        position: relative;
+        width: 4500px;
+        margin: 0 auto;
+      }
+      .full-landing-image {
+        position: absolute;
+        top: 20%;
+        left: 1110px;
+        width: 2130px;
+        height: 1500px;
+        background: url(/img/003--1\ 1.png) no-repeat center;
+        /* css 이미지 url */
+        /* <img src="/img/003.png" alt="" /> */
+        background-size: cover;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 물결 그래픽 효과를 적용할 이미지 -->
+    <div class="test">
+      <img src="/img/003.png" alt="" />
+      <div class="full-landing-image"></div>
+    </div>
+
+    <script>
+      $('.full-landing-image').ripples({
+        dropRadius: 90,
+        perturbance: 0.005, // 잔물경 굴절 강도. 0은 굴절 없음
+        resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+        interactive: true,
+      })
+    </script>
+  </body>
+</html>

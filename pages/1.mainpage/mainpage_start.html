@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
@@ -22,10 +31,6 @@
     </div>
     <div class="container">
       <div class="content1">
-        <div class="slide">
-          <img src="" alt="" />
-        </div>
-        <!-- 배경이미지슬라이드넣기 -->
         <h1>
           와주셔서 감사합니다. <br />
           조윤정입니다. <br />
@@ -49,7 +54,15 @@
           버튼이나 상단바의 텍스트를 클릭해주세요
         </h4>
       </div>
+      <div class="slider">
+        <div class="slide_01">
+          <div class="item item_01"></div>
+          <div class="item item_02"></div>
+          <div class="item item_03"></div>
+        </div>
+      </div>
     </div>
+
     <div class="footer">
       <p>
         와주셔서 감사합니다. <br />
@@ -59,18 +72,27 @@
       </p>
       <div class="social">
         <a href="#x">
-          <img src="" alt="" />
+          <img src="/img/social1.png" alt="" />
         </a>
         <a href="#x">
-          <img src="" alt="" />
+          <img src="/img/social2.png" alt="" />
         </a>
         <a href="#x">
-          <img src="" alt="" />
+          <img src="/img/social3.png" alt="" />
         </a>
         <a href="#x">
-          <img src="" alt="" />
+          <img src="/img/social4.png" alt="" />
         </a>
       </div>
     </div>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $('.slide_01').slick({
+        autoplay: true,
+        dots: true,
+        // nextArrow: $('.next'),
+        // prevArrow: $('.prev'),
+      })
+    </script>
   </body>
 </html>

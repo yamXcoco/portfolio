@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 1360px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  align-items: right;
+
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 208px;
+}
+.sub_title {
+  display: flex;
+  justify-content: right;
+  margin-left: 360px;
+  margin-top: 178px;
+  width: 1000px;
+  border-bottom: 7px solid #000;
+}
+.sub_title p {
+  margin-left: 174px;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 16px;
+  line-height: 33px;
+  color: #000;
+  /* color: rgba(0, 0, 0, 0.5); */
+}
+.container1 .content1,
+.container2 .content1,
+.container3 .content1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.container1 .content1 h1,
+.container2 .content1 h1,
+.container3 .content1 h1 {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 90px;
+}
+.container1 .content1 h2,
+.container2 .content1 h2,
+.container3 .content1 h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color: #fee800;
+  margin-bottom: 80px;
+}
+.container1 .content1 h3,
+.container2 .content1 h3,
+.container3 .content1 h3 {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 32px;
+}
+.container1 .content1 p,
+.container3 .content1 p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 60px;
+}
+.container1 button,
+.container3 button {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  bottom: 60px;
+  right: 0;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 2px solid #4e4e4e;
+}
+.container1 img,
+.container3 img {
+  margin-bottom: 40px;
+}
+.container1 img:last-child,
+.container3 img:last-child {
+  margin-bottom: 190px;
+}
+.content2.shadow {
+  filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.13));
+}
+
+.footer .social {
+  display: flex;
+  height: 70px;
+  border-top: 4px solid rgb(90, 90, 90);
+  justify-content: center;
+}
+.social img {
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+/* 퍼블리싱 */
+.container2 .content1 h3 {
+  line-height: 50px;
+}
+.container2 .content2 img:last-child {
+  margin-bottom: 200px;
+}
+.btns button:nth-child(1) {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  bottom: 210px;
+  right: 0;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 2px solid #4e4e4e;
+}
+.btns button:nth-child(2) {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  bottom: 135px;
+  right: 0;
+  font-weight: 400;
+  font-size: 22px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #4e4e4e;
+}
+.btns button:last-child {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  bottom: 60px;
+  right: 0;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 2px solid #4e4e4e;
+}
+.content2.block img {
+  display: block;
+}
+
+/* 그래픽 */
+.btn h4 {
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 75px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 420px;
+}
