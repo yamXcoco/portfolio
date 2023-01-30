@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
@@ -14,18 +13,33 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="/js/common.js"></script>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <div class="header">
       <div class="nav">
         <div class="logo">
-          <img src="/img/Yunjung JO.png" alt="" />
+          <a href="/pages/1.mainpage/mainpage_start.html">
+            <img src="/img/Yunjung JO.png" alt="" />
+          </a>
         </div>
         <div class="sub_title">
-          <p>자기소개</p>
-          <p>작업물</p>
-          <p>연락</p>
+          <a href="/pages/1.mainpage/mainpage_1.html">
+            <p>자기소개</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_2.html">
+            <p>작업물</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_3.html">
+            <p>연락</p>
+          </a>
         </div>
       </div>
     </div>
@@ -34,14 +48,21 @@
         <h1>
           와주셔서 감사합니다. <br />
           조윤정입니다. <br />
-          모든 포트폴리오는 <span>자세히 보기</span>를 눌러주세요 <br />
+          모든 포트폴리오는
+          <a href="/pages/1.mainpage/mainpage_2.html">
+            <span>자세히 보기</span>
+          </a>
+          를 눌러주세요 <br />
           더 자세한 내용은 하단의 메일로 연락주세요.
         </h1>
         <h2>
           Hello I am an artist and web designer <br />
           based in Korea <br />
-          Here you can see some of my latest <span>WORK</span> <br />
-          Thank you :)
+          Here you can see some of my latest
+          <a href="/pages/1.mainpage/mainpage_2.html">
+            <span>WORK</span>
+          </a>
+          <br />Thank you :)
         </h2>
       </div>
       <div class="content2">
@@ -85,6 +106,12 @@
         </a>
       </div>
     </div>
+
+    <!-- gotop -->
+    <div class="gotop">
+      <i class="xi-arrow-up"></i>
+    </div>
+
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $('.slide_01').slick({

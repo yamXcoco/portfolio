@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio_profile</title>
+    <!-- xi -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <!-- 스크롤바 -->
-    <link rel="stylesheet" href="/path/to/jquery.mCustomScrollbar.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/common.js"></script>
   </head>
+
   <body>
     <div class="header">
       <div class="nav">
         <div class="logo">
-          <img src="/img/Yunjung JO.png" alt="" />
+          <a href="/pages/1.mainpage/mainpage_start.html">
+            <img src="/img/Yunjung JO.png" alt="" />
+          </a>
         </div>
         <div class="sub_title">
-          <p>자기소개</p>
-          <p>작업물</p>
-          <p>연락</p>
+          <a href="/pages/1.mainpage/mainpage_1.html">
+            <p class="p1">자기소개</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_2.html">
+            <p class="p2">작업물</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_3.html">
+            <p class="p3">연락</p>
+          </a>
         </div>
       </div>
     </div>
@@ -70,8 +83,8 @@
       </div>
       <h5>상세이력</h5>
       <div class="content2">
-        <div class="img"></div>
-        <div class="scroll_box">
+        <!-- <div class="img"></div> -->
+        <div class="scrollBar">
           <div class="inner_content">
             <h1>학력</h1>
             <h2>
@@ -130,11 +143,10 @@
         </a>
       </div>
     </div>
-    <script>
-      $('.scroll_box').mCustomScrollbar({
-        theme: 'minimal-dark',
-        // theme: 'rounded-dots',
-      })
-    </script>
+
+    <!-- gotop -->
+    <div class="gotop">
+      <i class="xi-arrow-up"></i>
+    </div>
   </body>
 </html>
