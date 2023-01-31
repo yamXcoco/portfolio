@@ -179,3 +179,26 @@ body {
   color: rgba(0, 0, 0, 0.6);
   margin-top: 420px;
 }
+
+.full-landing-image,
+.full-landing-image2,
+.full-landing-image3,
+.full-landing-image4{
+  width: 1360px;
+  height: 1020px;
+  /* <img src="/img/003.png" alt="" /> */
+  background-size: cover;
+  margin-bottom: 40px;
+}
+.full-landing-image{
+  background: url(/img/img-3/3122.png) no-repeat center; /* css 이미지 url */
+}
+.full-landing-image2{
+  background: url(/img/img-3/3112.png) no-repeat center; 
+}
+.full-landing-image3{
+  background: url(/img/img-3/302.png) no-repeat center; 
+}
+.full-landing-image4{
+  background: url(/img/img-3/392.png) no-repeat center; 
+}
