@@ -239,7 +239,7 @@ body {
   line-height: 48px;
 }
 .container1 h5 {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   font-weight: 600;
   font-size: 36px;
@@ -249,17 +249,19 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 140px;
-  text-align: center;
+   text-align: center;
 }
 .container1 .content2 {
   margin-top: 130px;
 }
 .scrollBar {
+  text-align: left;
   background-color: #fff8ad;
-
+  border-radius: 20px;
+  direction:rtl;
   width: 1124px;
   margin: 0 auto;
-  height: 800px;
+  height: 1100px;
   /* height: 300px; */
   /* border: 1px solid purple; */
   /* overflow: auto; */
@@ -272,34 +274,34 @@ body {
 }
 
 .scrollBar h1 {
-  margin-left: 50px;
+  margin-left: 100px;
   font-weight: 700;
   font-size: 46px;
   margin-bottom: 50px;
 }
 .scrollBar h1:first-child {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .scrollBar h2 {
-  margin-left: 50px;
+  margin-left: 100px;
   font-size: 28px;
   margin-bottom: 8px;
   font-weight: 700;
 }
 .scrollBar p {
-  margin-left: 50px;
+  margin-left: 100px;
   font-weight: 700;
   font-size: 24px;
   color: rgba(54, 54, 54, 0.7);
 }
 .scrollBar p:last-child {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 .scrollBar::-webkit-scrollbar {
-  width: 20px; /* 스크롤바의 너비 */
+  width: 30px; /* 스크롤바의 너비 */
 }
 .scrollBar::-webkit-scrollbar-thumb {
-  height: 5%; /* 스크롤바의 길이 */
+  height: 1%; /* 스크롤바의 길이 */
   background: #000; /* 스크롤바의 색상 */
   border-radius: 20px;
 }
