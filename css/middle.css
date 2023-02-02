@@ -26,13 +26,16 @@ body {
 }
 .logo {
   position: absolute;
-  top: 208px;
+  top: 176px;
+}
+.logo:hover {
+  filter: drop-shadow(5px 5px 5px gray);
 }
 .sub_title {
   display: flex;
   justify-content: right;
   margin-left: 360px;
-  margin-top: 178px;
+  margin-top: 140px;
   width: 1000px;
   border-bottom: 7px solid #000;
 }
@@ -114,4 +117,21 @@ body {
   margin-right: 20px;
   margin-top: 30px;
   margin-bottom: 100px;
+}
+/* .gotop */
+.gotop {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px;
+  background-color: #fee800;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  display: none;
+  opacity: 80%;
+  z-index: 100;
 }

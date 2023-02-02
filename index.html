@@ -20,25 +20,26 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="/js/common.js"></script>
+    <!-- <script src="./js/text_effect.js"></script> -->
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <div class="header">
       <div class="nav">
         <div class="logo">
-          <a href="/pages/1.mainpage/mainpage_start.html">
+          <a href="/index.html">
             <img src="/img/Yunjung JO.png" alt="" />
           </a>
         </div>
         <div class="sub_title">
           <a href="/pages/1.mainpage/mainpage_1.html">
-            <p>자기소개</p>
+            <p class="p1">자기소개</p>
           </a>
           <a href="/pages/1.mainpage/mainpage_2.html">
-            <p>작업물</p>
+            <p class="p2">작업물</p>
           </a>
           <a href="/pages/1.mainpage/mainpage_3.html">
-            <p>연락</p>
+            <p class="p3">연락</p>
           </a>
         </div>
       </div>
@@ -66,10 +67,14 @@
         </h2>
       </div>
       <div class="content2">
-        <h3>
-          반갑습니다. <br />
-          조윤정입니다.
-        </h3>
+        <div class="wrapper">
+          <h3 data-heading="반갑습니다">
+            반갑습니다            
+          </h3>
+          <h4 data-heading="조윤정입니다">
+            조윤정입니다           
+          </h4>
+        </div>
         <h4>
           제 포트폴리오가 궁금하시다면 <br />
           버튼이나 상단바의 텍스트를 클릭해주세요

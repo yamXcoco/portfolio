@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>uiux</title>
+    <!-- xi -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      />
+      <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script src="/js/common.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="/css/lastpage.css" />
   </head>
   <body>
@@ -44,8 +54,9 @@
         </a>
       </div>
       <div class="content2">
+        <div class="full-landing-image2"></div>
+        <!-- <img src="/img/img-3/322.png" alt="" /> -->
         <img src="/img/img-3/321.png" alt="" />
-        <img src="/img/img-3/322.png" alt="" />
       </div>
     </div>
     <div class="footer">
@@ -64,5 +75,17 @@
         </a>
       </div>
     </div>
+    <!-- gotop -->
+    <div class="gotop">
+      <i class="xi-arrow-up"></i>
+    </div>
+    <script>
+      $('.full-landing-image2').ripples({
+        dropRadius: 90,
+        perturbance: 0.002, // 잔물경 굴절 강도. 0은 굴절 없음
+        resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+        interactive: true,
+      })
+    </script>
   </body>
 </html>
