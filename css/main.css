@@ -15,6 +15,29 @@ ul {
 }
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  cursor: none;
+}
+/* cursor */
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 900;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  backdrop-filter: sepia(90%);
+  background-size: cover;
+  filter: blur(2px);
+}
+.cursor-grow {
+  transform: scale(2.5);
+  background-color: #fff8ad;
+  filter: blur(1px);
 }
 .header,
 .footer,
@@ -27,10 +50,8 @@ body {
 .nav {
   display: flex;
   align-items: right;
-
   position: relative;
 }
-
 .logo {
   position: absolute;
   top: 176px;
@@ -55,16 +76,13 @@ body {
   color: #000;
 }
 .sub_title .p1:hover {
-  font-size: 26px;
-  color: #fee800;
+  color: #feba00;
 }
 .sub_title .p2:hover {
-  font-size: 26px;
-  color: #fee800;
+  color: #feba00;
 }
 .sub_title .p3:hover {
-  font-size: 26px;
-  color: #fee800;
+  color: #feba00;
 }
 /* 여기부터 */
 .content2{
@@ -125,7 +143,7 @@ body {
   z-index:2;
   -webkit-text-stroke: 3px #fee800;
   -webkit-text-fill-color: transparent;
-  opacity: 20%;
+  opacity: 0%;
 }
 .wrapper h3::before,
 .wrapper h4::before {
@@ -133,19 +151,21 @@ body {
   left: 0px;
   top: 15px;
   opacity: 20%;
-  color: #fee800;
+  color: #000;
 }
 .wrapper h3:hover::after,
 .wrapper h4:hover::after {
   left: -20px;
   top:-20px;
   opacity: 0%;
+  color: #fee800;
   opacity: 100%;
 }
 .wrapper h3:hover::before,
 .wrapper h4:hover::before {
   left: 20px;
   top: 20px;
+  color: #fee800;
   opacity: 100%;
 }
 
@@ -502,6 +522,7 @@ body {
   background-color: white;
   color: #fee800;
   transition: all 1s;
+  /* cursor: none; */
 }
 
 .container2 li:hover .button {
@@ -615,6 +636,7 @@ body {
   color: #000;
   font-size: 24px;
   outline: none;
+  cursor: none;
 }
 .gform input::placeholder,
 .gform textarea::placeholder {
@@ -627,6 +649,8 @@ body {
   border: 3px solid #fee800;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
 }
+.gform input:focus,
+.gform textarea:focus
 .gform label {
   display: inline-block;
   padding-bottom: 6px;
@@ -639,6 +663,9 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+}
+.gform .btn:focus .cursor{
+  display: none;
 }
 .dimm {
   position: fixed;

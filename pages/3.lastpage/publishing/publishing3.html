@@ -13,6 +13,8 @@
       <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script src="/js/common.js"></script>
     <script src="/js/common.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="/css/lastpage.css" />
@@ -55,9 +57,12 @@
         </div>
       </div>
       <div class="content2">
-        <img src="/img/img-3/30031.png" alt="" />
+        <div class="full-landing-image28"></div>
+        <div class="full-landing-image29"></div>
+        <div class="full-landing-image30"></div>
+        <!-- <img src="/img/img-3/30031.png" alt="" />
         <img src="/img/img-3/30032.png" alt="" />
-        <img src="/img/img-3/30033.png" alt="" />
+        <img src="/img/img-3/30033.png" alt="" /> -->
       </div>
     </div>
     <div class="footer">
@@ -80,5 +85,25 @@
     <div class="gotop">
       <i class="xi-arrow-up"></i>
     </div>
+    <script>
+      $('.full-landing-image28').ripples({
+        dropRadius: 50,
+        perturbance: 0.0001, // 잔물경 굴절 강도. 0은 굴절 없음
+        resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+        interactive: true,
+      })
+      $('.full-landing-image29').ripples({
+        dropRadius: 50,
+        perturbance: 0.0001, // 잔물경 굴절 강도. 0은 굴절 없음
+        resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+        interactive: true,
+      })
+      $('.full-landing-image30').ripples({
+        dropRadius: 50,
+        perturbance: 0.0001, // 잔물경 굴절 강도. 0은 굴절 없음
+        resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+        interactive: true,
+      })
+    </script>
   </body>
 </html>

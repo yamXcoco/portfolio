@@ -13,6 +13,7 @@
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <script src="/js/common.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="/css/lastpage.css" />
@@ -57,7 +58,8 @@
         </div>
       </div>
       <div class="content2">
-        <img src="/img/img-3/b1.png" alt="" />
+        <div class="full-landing-image40"></div>
+        <!-- <img src="/img/img-3/b1.png" alt="" /> -->
       </div>
     </div>
     <div class="footer">
@@ -80,5 +82,14 @@
     <div class="gotop">
       <i class="xi-arrow-up"></i>
     </div>
+    
+    <script>
+      $('.full-landing-image40').ripples({
+        dropRadius: 100,
+        perturbance: 0.0001, // 잔물경 굴절 강도. 0은 굴절 없음
+        resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+        interactive: true,
+      })
+    </script>
   </body>
 </html>

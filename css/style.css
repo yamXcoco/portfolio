@@ -7,15 +7,15 @@ html {
 body {
   cursor: none;
 }
-.gnb {
+/* .gnb {
   display: flex;
   background-color: #000;
   height: 100px;
-}
+} */
 /* 커스텀 커서 스타일 정의해주기 */
 .cursor {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border: 2px solid var(--color-texta);
   border-radius: 50%;
   position: absolute;
@@ -25,26 +25,10 @@ body {
   transition: all 0.3s ease;
   transition-property: background, transform;
   transform-origin: 100% 100%;
-  backdrop-filter: sepia(20%);
-
+  backdrop-filter: sepia(90%);
   background-size: cover;
 }
 .cursor-grow {
   transform: scale(2);
-  background-color: #777777;
-}
-/* 점선이 들어갈 ::after(pseudo)요소 만들고 크기값 설정해주기*/
-.gnb li a:hover::after {
-  width: calc(100% - 2rem);
-  height: 3px;
-  background-size: contain; /* 배경 이미지(svg)가 알맞게 들어가도록*/
-}
-/* hover된 링크의 글자 색상 정의(하얀색)*/
-/* .hovered-link 선택자명은 추후 JS로 추가할 예정!*/
-.hovered-link {
-  color: var(--color-textb) !important;
-}
-/* .gnb li a:hover::after의 svg에 배경이미지 지정!*/
-.hovered-link::after {
-  background-image: url('../img/white_dot.svg');
+  background-color: #fee800;
 }
