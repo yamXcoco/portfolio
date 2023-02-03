@@ -17,11 +17,33 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   width: 1360px;
   margin: 0 auto;
+  cursor: none;
+}
+/* cursor */
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 900;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  backdrop-filter: sepia(90%);
+  background-size: cover;
+  filter: blur(2px);
+}
+.cursor-grow {
+  transform: scale(2.5);
+  background-color: #fff8ad;
+  filter: blur(1px);
 }
 .nav {
   display: flex;
   align-items: right;
-
   position: relative;
 }
 .logo {
@@ -107,6 +129,7 @@ body {
 .container3 button:hover{
   background-color: #fee800;
   color: #000;
+  /* cursor: none; */
   font-size: 22px;
   font-weight: 900;
   padding-top: 4px;
@@ -152,7 +175,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   background-color: #fff;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: 2px solid #4e4e4e;
   color: #000;
 }
@@ -163,8 +186,14 @@ body {
   font-size: 22px;
   font-weight: 900;
   padding-top: 4px;
+  cursor: pointer;
+}
+.btns button:nth-child(1):hover .cursor,
+.btns button:nth-child(3):hover .cursor{
+  display: none;
 }
 .btns button:nth-child(2):hover{
+  cursor: pointer;
   background-color: #fee800;
   color: #000;
   font-size: 22px;
@@ -182,7 +211,7 @@ body {
   font-size: 20px;
   background-color: #000;
   color: #fff;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: 2px solid #4e4e4e;
 }
 .btns button:last-child {
@@ -194,7 +223,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   background-color: #fff;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: 2px solid #4e4e4e;
   transition: 1s;
 }

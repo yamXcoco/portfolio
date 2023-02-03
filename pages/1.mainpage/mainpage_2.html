@@ -25,13 +25,13 @@
         </div>
         <div class="sub_title">
           <a href="/pages/1.mainpage/mainpage_1.html">
-            <p>자기소개</p>
+            <p class="p1">자기소개</p>
           </a>
           <a href="/pages/1.mainpage/mainpage_2.html">
-            <p>작업물</p>
+            <p class="p2">작업물</p>
           </a>
           <a href="/pages/1.mainpage/mainpage_3.html">
-            <p>연락</p>
+            <p class="p3">연락</p>
           </a>
         </div>
       </div>
@@ -102,15 +102,11 @@
     <!-- 커서 -->
     <script>
       let mouseCursor = document.querySelector('.cursor')
-      let navLinks = document.querySelectorAll('.sub_title a') //메뉴 링크
+      let navLinks = document.querySelectorAll('.sub_title a') 
       let navLinkss = document.querySelectorAll('.logo a')
       let navLinksss = document.querySelectorAll('.button')
-      // let navLinkssss = document.querySelectorAll('.logo a')
-      // let navLinksssss = document.querySelectorAll('.logo a')
-      //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
       window.addEventListener('scroll', cursor)
       window.addEventListener('mousemove', cursor)
-      //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
       function cursor(e) {
         mouseCursor.style.left = e.pageX + 'px'
         mouseCursor.style.top = e.pageY + 'px'

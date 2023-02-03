@@ -85,6 +85,47 @@
     <div class="gotop">
       <i class="xi-arrow-up"></i>
     </div>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <!-- 커서 -->
+    <script>
+      let mouseCursor = document.querySelector('.cursor')
+      let navLinks = document.querySelectorAll('.sub_title a') //메뉴 링크
+      let navLinkss = document.querySelectorAll('.logo a') 
+      window.addEventListener('scroll', cursor)
+      window.addEventListener('mousemove', cursor)
+      function cursor(e) {
+        mouseCursor.style.left = e.pageX + 'px'
+        mouseCursor.style.top = e.pageY + 'px'
+      }
+    </script>
+    <script>
+      navLinks.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('cursor-grow')
+          mouseCursor.style.zIndex = '-1'
+          link.classList.add('hovered-link')
+        })
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('cursor-grow')
+          mouseCursor.style.zIndex = '1000'
+          link.classList.remove('hovered-link')
+        })
+      })
+      navLinkss.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('cursor-grow')
+          mouseCursor.style.zIndex = '-1'
+          link.classList.add('hovered-link')
+        })
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('cursor-grow')
+          mouseCursor.style.zIndex = '1000'
+          link.classList.remove('hovered-link')
+        })
+      })
+    </script>
+    <!-- 화면 물결효과 -->
     <script>
       $('.full-landing-image31').ripples({
         dropRadius: 100,
