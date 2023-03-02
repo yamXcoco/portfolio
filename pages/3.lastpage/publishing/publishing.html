@@ -9,8 +9,8 @@
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
-      />
-      <!-- 제이쿼리 -->
+    />
+    <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
@@ -53,9 +53,20 @@
           </h3>
         </div>
         <div class="btns">
-          <button type="button" onclick="location.href=''">사이트 보기</button>
-          <button onclick="window.open('https://github.com/yamXcoco/haagendazs') "  target='_blank'>코드 보기</button>
-          <button onclick="location.href='/pages/2.middlepage/Publishing.html'">이전으로</button>
+          <button
+            onclick="window.open('https://yamxcoco.github.io/haagendazs/')"
+          >
+            사이트 보기
+          </button>
+          <button
+            onclick="window.open('https://github.com/yamXcoco/haagendazs') "
+            target="_blank"
+          >
+            코드 보기
+          </button>
+          <button onclick="location.href='/pages/2.middlepage/Publishing.html'">
+            이전으로
+          </button>
         </div>
       </div>
       <div class="content2">
@@ -95,7 +106,7 @@
     <script>
       let mouseCursor = document.querySelector('.cursor')
       let navLinks = document.querySelectorAll('.sub_title a') //메뉴 링크
-      let navLinkss = document.querySelectorAll('.logo a') 
+      let navLinkss = document.querySelectorAll('.logo a')
       window.addEventListener('scroll', cursor)
       window.addEventListener('mousemove', cursor)
       function cursor(e) {
